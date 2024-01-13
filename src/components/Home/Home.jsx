@@ -215,7 +215,7 @@ const Home = () => {
                     </a>
                   </p>
                   <p>
-                    Stepin :
+                    Stephin :
                     <a
                       className="text-decoration-none text-black"
                       href="tel:9188136839"
