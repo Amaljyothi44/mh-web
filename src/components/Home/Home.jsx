@@ -78,10 +78,11 @@ const ButtonGrid = () => {
         </>
       )}
       {user && <MessButton title="Dashboard" href="/dashboard" />}
+      <MessButton title="Mess Bill" href="/messfee" />
       <MessButton title="Rules" href="/rules" />
       <MessButton title="Notifications" href="/notification" />
 
-      <MessButton title="Mess Bill" href="/messfee" />
+      
 
     </>
   );
