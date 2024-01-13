@@ -206,21 +206,21 @@ const Home = () => {
                   </p>
                   <h3 className="mt-5">Contact</h3>
                   <p className="mt-4">
-                    Abhayjith :
-                    <a
-                      className="text-decoration-none text-black"
-                      href="tel:7994139148"
-                    >
-                      &nbsp;+91 7994139148 (Hostel secretary)
-                    </a>
-                  </p>
-                  <p>
                     Amaljyothi :
                     <a
                       className="text-decoration-none text-black"
-                      href="tel:9876543210"
+                      href="tel:8848508084"
                     >
-                      &nbsp;+91 9876543210 (Mess secretary)
+                      &nbsp;+91 8848508084 (Hostel secretary)
+                    </a>
+                  </p>
+                  <p>
+                    Stepin :
+                    <a
+                      className="text-decoration-none text-black"
+                      href="tel:9188136839"
+                    >
+                      &nbsp;+91 9188136839 (Mess secretary)
                     </a>
                   </p>
                   <p>
