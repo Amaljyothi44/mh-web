@@ -1,0 +1,14 @@
+.notifications{
+    overflow-y: scroll;
+    height: fit-content;
+}
+.notifications::-webkit-scrollbar{
+    display: none;
+}
+.notification{
+    background-color: #F2ECFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2px;
+}

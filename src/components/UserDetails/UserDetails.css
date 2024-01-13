@@ -1,0 +1,36 @@
+.user_data > p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 125%;
+  color: #008cff;
+}
+.user_data_logout_button > button {
+  position: relative;
+  width: 75px;
+  height: 27px;
+  border: 0.5px solid #000000;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: #ff00d6;
+}
+.user_data_logout_button > button > i {
+  position: absolute;
+  top: 0px;
+  right: 2px;
+  font-size: smaller;
+}
+.user_data_logout_button > button:hover {
+  background-color: #d1d1d1;
+}
+
+@media (max-width: 430px) {
+  .user_data > p {
+    font-size: 20px;
+  }
+}

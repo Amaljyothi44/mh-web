@@ -1,0 +1,50 @@
+h2{
+    padding-top: 20px;
+}
+.names-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .names-table th, .names-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .names-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .ad-btn {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .ad-btn:hover {
+    background-color: #45a049;
+  }
+  .month {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+  }
+
+  .se-all{
+    padding-top: 10px;
+  }
+  
+  .sho-btn {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    
+  }
