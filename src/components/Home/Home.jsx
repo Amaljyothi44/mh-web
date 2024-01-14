@@ -81,9 +81,6 @@ const ButtonGrid = () => {
       <MessButton title="Mess Bill" href="/messfee" />
       <MessButton title="Rules" href="/rules" />
       <MessButton title="Notifications" href="/notification" />
-
-      
-
     </>
   );
 };
@@ -122,8 +119,9 @@ export const Footer = () => {
       <p className="footer">
         Made with love by,
         <span>
-          <b>Studio</b>One
-        </span>
+          <b>Studio</b>One 
+        </span><br />
+        & <span>{'\t\t'}amaljyothi</span>
       </p>
     </>
   );
