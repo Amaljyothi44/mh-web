@@ -23,13 +23,21 @@ const Paidlist = () => {
         fetchFeeData();
     }, []);
 
-    const sortedNames = names.slice().sort((a, b) => {
-        const nameComparison = a.name.localeCompare(b.name);
-        return nameComparison !== 0 ? nameComparison : a.month.localeCompare(b.month);
+    const sortedName = names.slice().sort((a, b) => a.name.localeCompare(b.name));
+    const monthsOrder = [
+      'January', 'February', 'March', 'April', 'May', 'June',
+      'July', 'August', 'September', 'October', 'November', 'December'
+    ];
+    
+    const sortedNames = sortedName.slice().sort((a, b) => {
+      const monthA = monthsOrder.indexOf(a.month);
+      const monthB = monthsOrder.indexOf(b.month);
+    
+      return monthA - monthB;
     });
 
     const scrollToTop = () => {
-        const firstRow = document.getElementById('row-1');
+        const firstRow = document.getElementById('row');
         if (firstRow) {
           firstRow.scrollIntoView({ behavior: 'smooth' });
         }
@@ -42,7 +50,7 @@ const Paidlist = () => {
                 <div className='loading-spinner'></div>
             ) : (
                 <>
-                    <h2 id= 'row-1'>Names: Mess Bill Paid</h2>
+                    <h2 id= 'row'>Names: Mess Bill Paid</h2>
                     <table style={{ margin: 'auto', marginTop: '20px' }}>
                         <thead>
                             <tr>

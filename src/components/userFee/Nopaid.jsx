@@ -22,7 +22,19 @@ const Notpaid = () => {
     fetchFeeData();
   }, []);
 
-  const sortedNames = names.slice().sort((a, b) => a.name.localeCompare(b.name));
+  const sortedName = names.slice().sort((a, b) => a.name.localeCompare(b.name));
+  const monthsOrder = [
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'
+  ];
+  
+  const sortedNames = sortedName.slice().sort((a, b) => {
+    const monthA = monthsOrder.indexOf(a.month);
+    const monthB = monthsOrder.indexOf(b.month);
+  
+    return monthA - monthB;
+  });
+  
 
   const scrollToTop = () => {
     const firstRow = document.getElementById('row-1');
