@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
 import AdminLoginPage from "./pages/AdminLoginPage";
 import CalenderPage from "./pages/CalenderPage";
-import { useContext,useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { AuthContext } from "./context/AuthContext";
 import AdminPage from "./components/AdminPage/AdminPage";
 import NewUserPage from "./pages/NewUserPage/NewUserPage";
@@ -14,7 +14,7 @@ import Messfee from "./components/Messfee/Messfee";
 import Userfee from "./components/userFee/Userfee";
 
 function App() {
-  const { user,setUser } = useContext(AuthContext);
+  const { user, setUser } = useContext(AuthContext);
   useEffect(() => {
     setUser(JSON.parse(localStorage.getItem("user")));
   }, []);
@@ -29,7 +29,7 @@ function App() {
         />
         <Route
           element={
-            (user?.email !== "menshostelgecskp@gmail.com" ) ? (
+            (user?.email !== "menshostelgecskp@gmail.com") ? (
               <AdminLoginPage />
             ) : (
               <Navigate to="/admin-page" />
@@ -53,17 +53,18 @@ function App() {
 
         <Route
           element={
-            (user?.email === "menshostelgecskp@gmail.com") ? (
+            user?.email === "menshostelgecskp@gmail.com" ? (
               <Messfee />
             ) : user ? (
               <Userfee />
             ) : (
-              <Navigate to="/messfee" />
+              <LoginPage />
             )
           }
           exact
           path="/messfee"
         />
+
 
         <Route element={<NewUserPage />} exact path="/new-users" />
         <Route element={<MhRules />} exact path="/rules" />
